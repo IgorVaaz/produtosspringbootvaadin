@@ -23,48 +23,25 @@ public class ProdutosView extends VerticalLayout {
     private ProdutoService produtoService;
     private final Grid<Produto> produtoGrid = new Grid<>(Produto.class, false);
 
-    private TextField ean11;
-
     public ProdutosView(ProdutoService produtoService){
         this.produtoService = produtoService;
 
         SplitLayout splitLayout = new SplitLayout();
 
-        //createGridLayout(splitLayout);
-        //createEditorLayout(splitLayout);
-
-
-
+        produtoGrid.addColumn("matnr").setAutoWidth(true);
+        produtoGrid.addColumn("bismt").setAutoWidth(true);
         produtoGrid.addColumn("ean11").setAutoWidth(true);
-//        produtoGrid.addColumn("")
+        produtoGrid.addColumn("meins").setAutoWidth(true);
+        produtoGrid.addColumn("maktx").setAutoWidth(true);
+        produtoGrid.addColumn("descmarc").setAutoWidth(true);
+        produtoGrid.addColumn("node").setAutoWidth(true);
+        produtoGrid.addColumn("imob").setAutoWidth(true);
+        produtoGrid.addColumn("umrez").setAutoWidth(true);
 
         produtoGrid.addThemeVariants(GridVariant.LUMO_NO_BORDER);
-        //produtoGrid.setHeightFull();
 
         produtoGrid.setItems(produtoService.findAll());
 
         add(produtoGrid);
     }
-
-//    private void createGridLayout(SplitLayout splitLayout) {
-//        Div wrapper = new Div();
-//        wrapper.setClassName("grid-wrapper");
-//        wrapper.add(produtoGrid);
-//        splitLayout.addToPrimary(wrapper);
-//    }
-//
-//    private void createEditorLayout(SplitLayout splitLayout) {
-//        Div editorLayoutDiv = new Div();
-//        editorLayoutDiv.setClassName("editor-layout");
-//
-//        Div editorDiv = new Div();
-//        editorDiv.setClassName("editor");
-//        editorLayoutDiv.add(editorDiv);
-//
-//        FormLayout formLayout = new FormLayout();
-//        ean11 = new TextField("ean11");
-//        ean11.setWidthFull();
-//
-//        splitLayout.addToSecondary(editorLayoutDiv);
-//    }
 }
