@@ -13,6 +13,8 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 //@Theme(value = "generated")
 @PWA(name = "generated", shortName = "generated", offlineResources = {})
 @NpmPackage(value = "line-awesome", version = "1.3.0")
+@NpmPackage(value = "@vaadin-component-factory/vcf-nav", version = "1.0.6")
+@EnableScheduling
 public class ProdutoApplication implements AppShellConfigurator {
 
 	public static void main(String[] args) {
