@@ -2,18 +2,13 @@ package br.muffato.produtos.data.integracaosap.views;
 
 import br.muffato.produtos.data.integracaosap.model.Produto;
 import br.muffato.produtos.data.integracaosap.service.ProdutoService;
-import com.vaadin.flow.component.formlayout.FormLayout;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.grid.GridVariant;
-import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.splitlayout.SplitLayout;
-import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.*;
 import com.vaadin.flow.server.auth.AnonymousAllowed;
 
-import java.util.Arrays;
-import java.util.List;
 @PageTitle("Produtos")
 @Route(value = "produtos", layout = Principal.class)
 @RouteAlias(value = "produtos", layout = Principal.class)

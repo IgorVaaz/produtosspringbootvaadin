@@ -5,17 +5,15 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 import javax.persistence.*;
 
-@Table(name = "PROD")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
 @IdClass(ProdutoId.class)
 @Builder
-
+@Table(name = "PROD", schema = "INTEGRACAO_SAP")
 public class Produto {
     @Column(name = "MATNR")
     @Id

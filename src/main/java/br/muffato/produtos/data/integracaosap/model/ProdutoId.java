@@ -2,7 +2,6 @@ package br.muffato.produtos.data.integracaosap.model;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-
 import java.io.Serializable;
 import java.util.Objects;
 
