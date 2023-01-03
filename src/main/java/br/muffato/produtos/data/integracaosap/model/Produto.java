@@ -1,6 +1,5 @@
 package br.muffato.produtos.data.integracaosap.model;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

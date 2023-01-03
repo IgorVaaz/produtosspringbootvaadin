@@ -1,9 +1,7 @@
 package br.muffato.produtos.data.integracaosap.model;
 
 import java.util.Date;
-
 import javax.persistence.*;
-
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;
 
