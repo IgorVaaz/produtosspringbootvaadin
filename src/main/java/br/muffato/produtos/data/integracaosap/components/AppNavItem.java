@@ -13,7 +13,7 @@ import com.vaadin.flow.server.VaadinService;
 import java.util.Optional;
 
 /**
- * A menu item for the {@link br.com.muffato.components.appnav.AppNav} component.
+ * A menu item for the {@link br.muffato.produtos.data.integracaosap.components.AppNav} component.
  * <p>
  * Can contain a label and/or an icon and links to a given {@code path}.
  */
